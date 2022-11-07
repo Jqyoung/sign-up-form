@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: logo-font;
+    src: url(/fonts/True-Crimes/true-crimes.ttf);
+}
+
+@font-face {
+    font-family: form-font;
+    src: url(/fonts/cooper-hewitt/CooperHewitt-Book.otf);
+}
+
+@font-face {
+    font-family: form-font;
+    src: url(/fonts/cooper-hewitt/CooperHewitt-Semibold.otf);
+    font-weight: bold;
+}
+
+body {
+    padding: 0 15%;
+    background-color: black;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    min-height: 100vh;
+    padding: 185px 0 15px 0;
+    background-image: url(/images/retro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.logo {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px 20px 50px;
+    gap: 15px;
+    background-color: rgba(72, 72, 72, 0.3);
+}
+
+.logo>h1 {
+    color: white;
+    font-family: logo-font, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.logo>img {
+    width: 95px;
+}
+
+.logo-container>p {
+    margin-top: auto;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+
+.logo-container a {
+    color: white;
+}
+
+
+.form-container {
+    background-color: rgb(237, 237, 237);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 32%;
+}
+
+.form-container h2 {
+    width: 90%;
+    color: rgb(36, 36, 36);
+    font-size: 1.5rem;
+
+}
+
+.form-container h2:nth-child(3) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.form-fields {
+    background-color: white;
+    margin: auto 0 auto -50px;
+    min-width: 100%;
+    padding: 15px 50px 15px 50px;
+    box-shadow: 0 10px 10px -10px rgb(168, 168, 168)
+}
+
+h3,
+button {
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: rgb(50, 50, 50)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 5rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+label {
+    font-family: form-font, sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: rgb(93, 93, 93);
+}
+
+input{
+    margin-bottom: 20px;
+    height: 28px;
+    border: 0.1rem solid #E5E7EB;
+    border-radius: 5px;
+    outline:none;
+}
+
+input:not(.error):focus{  
+    border: 0.1rem solid #3c75b7;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px -2px  rgb(184, 184, 184) ;
+
+}
+
+.error{
+    border: 0.1rem solid #b73c3c;
+    border-radius: 5px;
+}
+
+form>p:last-child{
+    visibility: hidden;
+    margin-top: -18px;
+    margin-bottom: 3px;
+    font-size: 0.7rem;
+    color: #b73c3c;
+    font-family: form-font, sans-serif;
+}
+
+.buttons {
+    height: 32%;
+}
+
+
+button {
+    background-color: #744576;
+    color: white;
+    padding: 12px 45px 12px 45px;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    box-shadow: 5px 6px 5px -3px rgb(168, 168, 168);
+}
+
+.buttons a,
+button+p {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.buttons a {
+    font-weight: bold;
+}
