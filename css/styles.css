@@ -10,17 +10,17 @@ html {
 
 @font-face {
     font-family: logo-font;
-    src: url(/fonts/True-Crimes/true-crimes.ttf);
+    src: url(../fonts/True-Crimes/true-crimes.ttf);
 }
 
 @font-face {
     font-family: form-font;
-    src: url(/fonts/cooper-hewitt/CooperHewitt-Book.otf);
+    src: url(../fonts/cooper-hewitt/CooperHewitt-Book.otf);
 }
 
 @font-face {
     font-family: form-font;
-    src: url(/fonts/cooper-hewitt/CooperHewitt-Semibold.otf);
+    src: url(../fonts/cooper-hewitt/CooperHewitt-Semibold.otf);
     font-weight: bold;
 }
 
@@ -40,7 +40,7 @@ body {
     min-width: 400px;
     min-height: 100vh;
     padding: 185px 0 15px 0;
-    background-image: url(/images/retro.jpg);
+    background-image: url(../images/retro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
